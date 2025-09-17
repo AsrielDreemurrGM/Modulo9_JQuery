@@ -1,49 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>jQuery</title>
+  <title>Photo Gallery</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./main.css">
 </head>
-
 <body>
   <header>
-    <h1>Galeria de Fotos</h1>
-    <button type="button">Nova imagem +</button>
+    <h1>Photo Gallery</h1>
+    <button type="button">New Image +</button>
   </header>
   <form>
-    <h2>Inserir nova imagem</h2>
-    <input type="url" id="endereco-imagem-nova" required placeholder="URL da imagem" />
-    <button type="submit">Adicionar</button>
-    <button type="reset" id="botao-cancelar">Cancelar</button>
+    <h2>Add New Image</h2>
+    <input type="url" id="new-image-url" required placeholder="Image URL" />
+    <button type="submit">Add</button>
+    <button type="reset" id="cancel-button">Cancel</button>
   </form>
   <ul>
     <li>
-      <img src="./images/foto1.jpg" alt="Pintura de um gato"/>
-      <div class="overlay-imagem-link">
-        <a href="./images/foto1.jpg" title="Ver imagem em tamanho real" target="_blank">
-          Ver imagem em tamanho real
+      <img src="./images/foto1.jpg" alt="Cat painting" />
+      <div class="overlay-image-link">
+        <a href="./images/foto1.jpg" title="View full-size image" target="_blank">
+          View full-size image
         </a>
       </div>
     </li>
     <li>
-      <img src="./images/foto2.jpg" alt="Pintura de um gato"/>
-      <div class="overlay-imagem-link">
-        <a href="./images/foto2.jpg" title="Ver imagem em tamanho real" target="_blank">
-          Ver imagem em tamanho real
+      <img src="./images/foto2.jpg" alt="Photo of a flamingo" />
+      <div class="overlay-image-link">
+        <a href="./images/foto2.jpg" title="View full-size image" target="_blank">
+          View full-size image
         </a>
       </div>
     </li>
     <li>
-      <img src="./images/foto3.jpg" alt="Pintura de um gato"/>
-      <div class="overlay-imagem-link">
-        <a href="./images/foto3.jpg" title="Ver imagem em tamanho real" target="_blank">
-          Ver imagem em tamanho real
+      <img src="./images/foto3.jpg" alt="Happy dogs in a bag" />
+      <div class="overlay-image-link">
+        <a href="./images/foto3.jpg" title="View full-size image" target="_blank">
+          View full-size image
+        </a>
+      </div>
+    </li>
+    <li>
+      <img src="./images/foto4.jpg" alt="Pink flower with bee" />
+      <div class="overlay-image-link">
+        <a href="./images/foto4.jpg" title="View full-size image" target="_blank">
+          View full-size image
+        </a>
+      </div>
+    </li>
+    <li>
+      <img src="./images/foto5.jpg" alt="Wet pink flower" />
+      <div class="overlay-image-link">
+        <a href="./images/foto5.jpg" title="View full-size image" target="_blank">
+          View full-size image
         </a>
       </div>
     </li>
@@ -51,5 +65,4 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="./main.js"></script>
 </body>
-
 </html>

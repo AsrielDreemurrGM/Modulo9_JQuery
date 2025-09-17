@@ -1,26 +1,26 @@
-$(document).ready(function(){
-    $('header button').click(function() {
+$(document).ready(function () {
+    $('header button').click(function () {
         $('form').slideDown();
-    })
+    });
 
-    $('#botao-cancelar').click(function() {
+    $('#cancel-button').click(function () {
         $('form').slideUp();
-    })
+    });
 
-    $('form').on('submit', function(e) {
+    $('form').on('submit', function (e) {
         e.preventDefault();
-        const enderecoDaNovaImagem = $('#endereco-imagem-nova').val();
-        const novoItem = $('<li style="display: none"></li>');
-        $(`<img src="${enderecoDaNovaImagem}" />`).appendTo(novoItem);
+        const newImageUrl = $('#new-image-url').val();
+        const newItem = $('<li style="display: none"></li>');
+        $(`<img src="${newImageUrl}" />`).appendTo(newItem);
         $(`
-            <div class="overlay-imagem-link">
-                <a href="${enderecoDaNovaImagem}" target="_blank" title="Ver imagem em tamanho real">
-                    Ver imagem em tamanho real
+            <div class="overlay-image-link">
+                <a href="${newImageUrl}" target="_blank" title="View full-size image">
+                    View full-size image
                 </a>
             </div>
-        `).appendTo(novoItem);
-        $(novoItem).appendTo('ul');
-        $(novoItem).fadeIn(1000);
-        $('#endereco-imagem-nova').val('');
-    })
-})
+        `).appendTo(newItem);
+        $(newItem).appendTo('ul');
+        $(newItem).fadeIn(1000);
+        $('#new-image-url').val('');
+    });
+});
